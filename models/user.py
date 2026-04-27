@@ -1,4 +1,4 @@
-from sqlalchemy import TEXT, VARCHAR, Column, LargeBinary, create_engine
+from sqlalchemy import TEXT, VARCHAR, Column, LargeBinary
 from models.base import Base
 
 class User(Base):
