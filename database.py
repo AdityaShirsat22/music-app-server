@@ -7,4 +7,10 @@ engine=create_engine(Database_Url)
 
 SessionLocal=sessionmaker(autocommit=False,autoflush=False,bind=engine)
 
-db=SessionLocal()
+
+def get_db():
+    db=SessionLocal()
+    try:
+        yield db
+    finally:
+        db.close()

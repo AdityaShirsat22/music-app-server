@@ -1,6 +1,5 @@
 
 from fastapi import FastAPI
-from pydantic import BaseModel
 from models.base import Base
 from routes import auth
 from database import engine
